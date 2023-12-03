@@ -11,7 +11,27 @@
 
 ## 2.1. 분산과 표준편차
 ### 2.1.1. 편차
-### 2.1.2. 분산
+### 2.1.2. 표본분산
+> 편차 제곱들의 평균<br/>
+> $\sum{(편차)^2}$/데이터의 개수
+- NumPy 라이브러리 활용
+```
+import numpy as np
+# 방법1
+np.mean(deviation**2)
+# 방법2
+np.var(scores)
+```
+- Pandas와 NumPy 활용
+```
+import pandas as pd
+import numpy as np
+# 방법1
+scores_df['square of deviation'] = np.square(deviation)
+scores_df.mean()
+# 방법2
+scores_df.var(ddof=0)  # ddof = 1: 불편분산, ddof = 0: 표본분산
+```
 ### 2.1.3. 표준편차(standard deviation)
 > 분산의 제곱근<br/>
 > $\sqrt{(표본분산)}$
