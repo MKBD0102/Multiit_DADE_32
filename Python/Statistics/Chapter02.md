@@ -2,6 +2,23 @@
 <br/>
 
 ## 1.1. 평균값
+> 데이터의 합 / 데이터의 개수
+- 일반 작성
+```
+scores = [69, 56, 41, 57, 48, 65, 49]
+sum(scores)/len(scores)
+```
+- NumPy 라이브러리 활용
+```
+import numpy as np
+np.mean(scores)
+```
+- Pandas 라이브러리 활용
+```
+import pandas as pd
+scores_df = pd.DataFrame(scores)
+scores_df.mean()
+```
 ## 1.2. 중앙값
 > 데이터가 크기 순으로 정렬되었을 때 중앙에 위치한 값
 - 정렬
@@ -33,7 +50,6 @@ np.median(scores)
 - Pandas 라이브러리 활용
 ```
 import pandas as pd
-scores_df = pd.DataFrame(scores)
 scores_df.median()
 ```
 ## 1.3. 최빈값
