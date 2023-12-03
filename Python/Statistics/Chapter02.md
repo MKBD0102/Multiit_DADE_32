@@ -140,9 +140,23 @@ pd.Series([1,2,3,3,3,4,5,5,5]).mode()
 
 # 3. 데이터의 정규화
 <br/>
-> 정규화(normalization): 데이터를 통일된 지표로 변환 
+> 정규화(normalization): 데이터를 통일된 지표로 변환
+
 ## 3.1. 표준화
+> 데이터에서 평균을 빼고 표준편차로 나누는 것<br/>
+> 표준화 변량 = Z 점수(z-score) = (데이터의 값 - 데이터의 평균)/데이터의 표준편차<br/>
+> 표준화된 데이터의 평균 = 0, 표준편차 = 1<br/>
+```
+import numpy as np
+z = (scores - np.mean(scores)) / np.std(scores)
+```
 ## 3.2. 편찻값
+> 데이터의 평균 = 50, 표준편차 = 10이 되도록 정규화한 값<br/>
+> 편찻값 = 50 + 10 * z-score = 50 + 10 * (데이터의 값 - 데이터의 평균)/데이터의 표준편차
+```
+import numpy as np
+z = 50 + 10 * (scores - np.mean(scores)) / np.std(scores)
+```
 ---
 <br/>
 # 4. 1차원 데이터 시각화
