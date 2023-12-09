@@ -2,6 +2,7 @@
 - 위치: 데이터 중심 위치, ex. 평균, 중위수, 절사평균, 최빈값, 사분위수 등
 - 변이: 데이터 산포, ex. 표준편차, 분산, 사분위간 범위 등
 - 모양: 왜도(비대칭), 첨도(뾰족한 정도)
+## 1차원 데이터
 ### 중심 지표
 - 평균
   - 평균값(산술평균) `mean()`
@@ -18,7 +19,7 @@
 - 범위 `max(X) - min(X)`
 - 사분위수 `np.percentile(X,p)`, p = 0.25,0.5,0.75
 - 백분위수 `np.percentile(X,p)`
-# 데이터 정규화
+### 데이터 정규화
 - 표준화
   - `z = (x-mean())/std()`
   - `z = scipy.stats.zscore(x)`
@@ -26,3 +27,14 @@
 - 정규화
   - `z = (x - min()) / (max() - min())`
   - `z = sklearn.preprocessing.MinMaxScaler.fit_transform(x)`
+  - MinMaxScaler는 최솟값과 최댓값이 균일하게 나올 때 사용 가능함
+### 시각화
+- 히스토그램(histogram)
+  - `matplotlib.pyplot.hist(x,bins)`
+  - `seaborn.histplot(x,bins)`
+- 
+## 2차원 데이터
+### 두 데이터 사이 관계 지표
+- 공분산
+- 상관계수
+- 
