@@ -37,6 +37,6 @@
   - `seaborn.boxplot(x)`
 ## 2차원 데이터
 ### 두 데이터 사이 관계 지표
-- 공분산
-- 상관계수
-- 
+- 공분산 `numpy.cov(x,y)`
+- 상관계수 `pandas.DataFrame.corr`
+###  
