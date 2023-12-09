@@ -39,4 +39,7 @@
 ### 두 데이터 사이 관계 지표
 - 공분산 `numpy.cov(x,y)`
 - 상관계수 `pandas.DataFrame.corr`
-###  
+### 시각화
+- 산점도
+  - `matplotlib.pyplot.scatter(x,y)`
+  - `seaborn.scatterplot(data,x,y)`
