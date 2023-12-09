@@ -19,4 +19,10 @@
 - 사분위수 `np.percentile(X,p)`, p = 0.25,0.5,0.75
 - 백분위수 `np.percentile(X,p)`
 # 데이터 정규화
-- 표준화 `z = (x-men())/std()`
+- 표준화
+  - `z = (x-mean())/std()`
+  - `z = scipy.stats.zscore(x)`
+  - `z = sklearn.preprocessing.StandardScaler.fit_transform(x)`
+- 정규화
+  - `z = (x - min()) / (max() - min())`
+  - `z = sklearn.preprocessing.MinMaxScaler.fit_transform(x)`
