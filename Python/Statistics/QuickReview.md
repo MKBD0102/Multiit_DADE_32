@@ -43,3 +43,6 @@
 - 산점도
   - `matplotlib.pyplot.scatter(x,y)`
   - `seaborn.scatterplot(data,x,y)`
+- 히트맵(heatmap)
+  - `matplotlib.pyplot.hist2d(x,y,bins,range)`
+  - `seaborn.heatmap(data)
