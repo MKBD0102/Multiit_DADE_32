@@ -32,7 +32,9 @@
 - 히스토그램(histogram)
   - `matplotlib.pyplot.hist(x,bins)`
   - `seaborn.histplot(x,bins)`
-- 
+- 상자그림(boxplot)
+  - `matplotlib.pyplot.boxplot(x)`
+  - `seaborn.boxplot(x)`
 ## 2차원 데이터
 ### 두 데이터 사이 관계 지표
 - 공분산
