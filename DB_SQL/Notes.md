@@ -16,3 +16,6 @@
 - DB의 Table 내용 확인 `select * form [Table명];` (*: all)
 - Table의 columns 정보 확인 `desc [Table명]`
 
+## SELECT 출력문
+- 별칭 as `select [출력내용] as [컬럼명];`
+- 
