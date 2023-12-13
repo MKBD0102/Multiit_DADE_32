@@ -12,6 +12,7 @@
 ## cmd에서 SQL
 - MySQL 실행
 - SQL문은 문장 끝에 반드시 ';' 필요
-- DB 가져오기 `use [DB명];`
+- 스키마 이동 `use [DB명];`
 - DB의 Table 내용 확인 `select * form [Table명];` (*: all)
 - Table의 columns 정보 확인 `desc [Table명]`
+
