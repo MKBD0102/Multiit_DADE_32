@@ -13,6 +13,7 @@
 - MySQL 실행
 - SQL문은 문장 끝에 반드시 ';' 필요
 - 스키마 이동 `use [DB명];`
+- 전체 테이블 목록 모기 `show tables;`
 - DB의 Table 내용 확인 `select * form [Table명];` (*: all)
 - table의 스키마 구조 확인 `desc [Table명]` &rarr; [필드명, 데이터타입, 널값유무, 키값,기본값,시퀀스값]
 
