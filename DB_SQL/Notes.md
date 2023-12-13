@@ -26,7 +26,7 @@
 > GROUP BY 집계 연산 [SUM, AVG, VAR, MEAN, MAX, MIN ...]
 > ORDER BY 정렬
 > ```
-### SELECT, FROM
+### SELECT FROM
 - 단순 출력 `select [출력내용];`
 - 테이블 내용 출력 `select [컬럼리스트] from [테이블명];`
 - 여러 테이블 내용 출력 `select * from [테이블리스트];` &rarr; 결과 행 수 = 테이블1 행 수X테이블2 행 수X...X테이블n 행 수
@@ -47,6 +47,16 @@
          select [컬럼1], [별칭2].[동일컬럼], [컬럼3]
          from [테이블1] as [별칭1], [테이블2] as [별칭2]
          ```
+### WHERE
+```
+SELECT [컬럼리스트]
+FROM [테이블리스트]
+WHERE [조건문];
+```
+- 비교 연산자: > >= < <= = !=(<>)
+- 문자열 비교 `WHERE [문자열] LIKE [비교문자, wildcard]`
+ -  `%`: 모든 문자(0개의 문자도 포함)
+ -  `_`: 한 개의 문자
 
 
 ###### 참고) 주석
