@@ -17,7 +17,9 @@
 - Table의 columns 정보 확인 `desc [Table명]`
 
 ## SELECT 출력문
+- 단순 출력 `select [출력내용];`
 - 별칭 as `select [출력내용] as [컬럼명];`
+- 테이블 내용 출력 `select [컬럼리스트] * from [테이블명];`
 
 ###### 참고) 주석
 - #: GUI에서 사용하는 # 주석
