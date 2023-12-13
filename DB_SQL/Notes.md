@@ -17,6 +17,14 @@
 - table의 스키마 구조 확인 `desc [Table명]` &rarr; [필드명, 데이터타입, 널값유무, 키값,기본값,시퀀스값]
 
 ## SELECT 출력문
+> ```
+> SELECT 컬럼리스트
+> FROM 테이블리스트
+> WHERE 조건문 [숫자비교, 문자비교, 대소문자 비교, NULL, 날짜]
+> HAVING 'GROUP BY' 비교연산
+> GROUP BY 집계 연산 [SUM, AVG, VAR, MEAN, MAX, MIN ...]
+> ORDER BY 정렬
+> ```
 - 단순 출력 `select [출력내용];`
 - 테이블 내용 출력 `select [컬럼리스트] from [테이블명];`
 - 여러 테이블 내용 출력 `select * from [테이블리스트];` &rarr; 결과 행 수 = 테이블1 행 수X테이블2 행 수X...X테이블n 행 수
