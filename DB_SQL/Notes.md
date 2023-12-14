@@ -26,7 +26,7 @@
 > GROUP BY 집계 연산 [SUM, AVG, VAR, MEAN, MAX, MIN ...]
 > ORDER BY 정렬
 > ```
-### SELECT FROM
+### SELECT / FROM
 - 단순 출력 `select [출력내용];`
 - 테이블 내용 출력 `select [컬럼리스트] from [테이블명];`
 - 여러 테이블 내용 출력 `select * from [테이블리스트];` &rarr; 결과 행 수 = 테이블1 행 수X테이블2 행 수X...X테이블n 행 수
@@ -66,12 +66,32 @@ ORDER BY [정렬할 컬럼] ASC / DESC;  # ASC는 오름차순(기본값), DESC�
 ```
 - 정렬할 컬럼은 컬럼명으로도, 컬럼리스트에 등장한 순서(숫자)로도 입력 가능
 
-### GROUP BY
+### GROUP BY / HAVING
 ```
 SELECT [컬럼리스트]
 FROM [테이블리스트]
-GROUP BY [그룹화할 컬럼리스트];
+GROUP BY [그룹화할 컬럼리스트]
+HAVING [GROUP BY의 비교 연산];
 ```
+- 집계함수
+- 
+
+### WITH ROLLUP
+
+### CUBE
+
+### window 함수
+#### GROUPING()
+#### ROW_NUMBER()
+#### RANK() / DENSE_RANK()
+#### DATE TYPE
+- YEAR(): 1000 ~  9999  4자리 표시  
+- MONTH() : 1 ~ 12
+- DAY ()  : 1~  31
+- WEEKDAY(): 0  ~  6 (월 - 일)
+- DAYOFMONTH()  = DAY()  
+- HOUR() / MINUTE() / SECOND() 
+- DATE_ADD( INTERVAL ) , DATE_SUB() 
 
 ###### 참고) 주석
 - #: GUI에서 사용하는 # 주석
