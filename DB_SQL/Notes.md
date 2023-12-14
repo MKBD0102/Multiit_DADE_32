@@ -99,8 +99,9 @@ HAVING [GROUP BY의 비교 연산];
 - DATE_ADD( INTERVAL ) , DATE_SUB() 
 
 ### Language Structure
-- Literal
- - string
- - Numeric
- - Date and Time
- - 
+
+ - Literal
+  - string
+  - Numeric
+  - Date and Time
+  - 
