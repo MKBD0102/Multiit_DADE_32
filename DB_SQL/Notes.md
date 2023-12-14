@@ -17,6 +17,11 @@
 - DB의 Table 내용 확인 `select * form [Table명];` (*: all)
 - table의 스키마 구조 확인 `desc [Table명]` &rarr; [필드명, 데이터타입, 널값유무, 키값,기본값,시퀀스값]
 
+###### 참고) 주석
+- #: GUI에서 사용하는 # 주석
+- --: MySQL line 주석
+- /* */: multi line 주석
+
 ## SELECT 출력문
 > ```
 > SELECT 컬럼리스트
@@ -93,7 +98,9 @@ HAVING [GROUP BY의 비교 연산];
 - HOUR() / MINUTE() / SECOND() 
 - DATE_ADD( INTERVAL ) , DATE_SUB() 
 
-###### 참고) 주석
-- #: GUI에서 사용하는 # 주석
-- --: MySQL line 주석
-- /* */: multi line 주석
+### Language Structure
+- Literal
+ - string
+ - Numeric
+ - Date and Time
+ - 
