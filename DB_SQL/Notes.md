@@ -62,6 +62,7 @@ WHERE [조건문];
 - 문자열 비교 `WHERE [문자열] LIKE [비교문자, wildcard]`
  -  `%`: 모든 문자(0개의 문자도 포함)
  -  `_`: 한 개의 문자
+- `IS (NOT) NULL`: 비어있다. (비어있지 않다.) &rarr; True/False
 
 ### ORDER BY
 ```
@@ -75,7 +76,7 @@ ORDER BY [정렬할 컬럼] ASC / DESC;  # ASC는 오름차순(기본값), DESC�
 ```
 [함수명]([컬럼명])
 ```
-- SUM() 합, AVG() 평균, COUTN() 계, MAX() 최대, MIN() 최소, VAR() 분산, STD() 편차
+- `SUM()` 합, `AVG()` 평균, `COUTN()` 계, `MAX()` 최대, `MIN()` 최소, `VAR()` 분산, `STD()` 편차
 
 ### GROUP BY / HAVING
 ```
@@ -84,9 +85,18 @@ FROM [테이블리스트]
 GROUP BY [그룹화할 컬럼리스트]
 HAVING [GROUP BY의 비교 연산];
 ```
-
+- `GROUP BY [컬럼리스트]`:
+  - 컬럼의 값 별로 묶어서 계산하겠다.
+  - `ORDER BY [컬럼]`은 group by 출력 결과 기준으로 정렬
+- `HAVING [비교연산]`: group by 연산으로 나누어진 데이터에 조건을 줌
 
 ### WITH ROLLUP
+```
+SELECT [컬럼리스트]
+FROM [테이블리스트]
+GROUP BY [그룹화할 컬럼리스트] WITH ROLLUP;
+```
+- group by와 함께 사용, group by에 명시된 컬럼 리스트 순서대로 단계적으로 소계 계산(요약 정보)
 
 ### CUBE
 
