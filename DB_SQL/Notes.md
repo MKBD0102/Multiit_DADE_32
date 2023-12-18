@@ -99,6 +99,13 @@ GROUP BY [그룹화할 컬럼리스트] WITH ROLLUP;
 - group by와 함께 사용, group by에 명시된 컬럼 리스트 순서대로 단계적으로 소계 계산(요약 정보)
 
 ### CUBE
+```
+SELECT [컬럼리스트]
+FROM [테이블리스트]
+GROUP BY CUBE([그룹화할 컬럼리스트])
+```
+- 리스트에 있는 모든 컬럼에 대해 총계, 소계 출력.
+- MySQL에는 없음
 
 ### window 함수
 #### GROUPING()
