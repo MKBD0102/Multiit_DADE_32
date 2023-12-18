@@ -71,6 +71,12 @@ ORDER BY [정렬할 컬럼] ASC / DESC;  # ASC는 오름차순(기본값), DESC�
 ```
 - 정렬할 컬럼은 컬럼명으로도, 컬럼리스트에 등장한 순서(숫자)로도 입력 가능
 
+### 집계함수
+```
+[함수명]([컬럼명])
+```
+- SUM() 합, AVG() 평균, COUTN() 계, MAX() 최대, MIN() 최소, VAR() 분산, STD() 편차
+
 ### GROUP BY / HAVING
 ```
 SELECT [컬럼리스트]
@@ -78,8 +84,7 @@ FROM [테이블리스트]
 GROUP BY [그룹화할 컬럼리스트]
 HAVING [GROUP BY의 비교 연산];
 ```
-- 집계함수
-- 
+
 
 ### WITH ROLLUP
 
