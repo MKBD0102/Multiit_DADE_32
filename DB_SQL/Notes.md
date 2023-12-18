@@ -107,8 +107,15 @@ GROUP BY CUBE([그룹화할 컬럼리스트])
 - 리스트에 있는 모든 컬럼에 대해 총계, 소계 출력.
 - MySQL에는 없음
 
-### window 함수
 #### GROUPING()
+```
+GROUPING([컬럼])
+```
+- 행이 일반 그룹에 속해 있을 경우: 0
+- 행이 with rollup에 속해 있을 경우: 1
+
+
+### window 함수
 #### ROW_NUMBER()
 #### RANK() / DENSE_RANK()
 #### DATE TYPE
