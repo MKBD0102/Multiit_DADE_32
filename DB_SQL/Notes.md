@@ -117,6 +117,11 @@ GROUPING([컬럼])
 
 ### window 함수
 #### ROW_NUMBER()
+```
+SELECT ROW_NUMBER() OVER (ORDER BY [컬럼명1] ASC/DESC, PARTITION BY [컬럼명2])
+```
+- [컬럼명2]의 값으로 그룹핑 분할 &rarr; [컬럼명1]의 값으로 정렬 후 행의 일련번호 리턴
+
 #### RANK() / DENSE_RANK()
 #### DATE TYPE
 - YEAR(): 1000 ~  9999  4자리 표시  
