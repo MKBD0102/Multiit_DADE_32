@@ -120,9 +120,22 @@ GROUPING([컬럼])
 ```
 SELECT ROW_NUMBER() OVER (ORDER BY [컬럼명1] ASC/DESC, PARTITION BY [컬럼명2])
 ```
-- [컬럼명2]의 값으로 그룹핑 분할 &rarr; [컬럼명1]의 값으로 정렬 후 행의 일련번호 리턴
+- [컬럼명2]의 값으로 그룹핑 분할 &rarr; [컬럼명1]의 값으로 정렬 후 각 행의 일련번호(순서) 리턴
 
 #### RANK() / DENSE_RANK()
+##### RANK()
+```
+SELECT RANK() OVER (ORDER BY [컬럼명1] ASC/DESC, PARTITION BY [컬럼명2])
+```
+- 동일한 값에 같은 순위 부여, 다음 순위는 중복 개수를 고려하여 skip
+ - ex) 1, 2, 3, 3, 3, 6, 7, 8
+##### DENSE_RANK()
+```
+SELECT DENSE_RANK() OVER (ORDER BY [컬럼명1] ASC/DESC, PARTITION BY [컬럼명2])
+```
+- 동일한 값에 같은 순위 부여, 중복이 있어도 순위를 건너뛰지 않음
+ - ex) 1, 2, 3, 3, 3, 4, 5, 6
+
 #### DATE TYPE
 - YEAR(): 1000 ~  9999  4자리 표시  
 - MONTH() : 1 ~ 12
